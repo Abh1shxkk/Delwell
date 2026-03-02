@@ -1,0 +1,4 @@
+/* Tailwind input for building a static CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

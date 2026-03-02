@@ -1,0 +1,127 @@
+
+#addQuestionBtn {
+    background-color: #ffcba4;
+    color: var(--dark-text);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#addQuestionBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* DataTable Show Entries Dropdown Width */
+.dataTables_length select {
+    width: 80px !important;
+    min-width: 80px !important;
+}
+
+/* Ensure Bootstrap dropdowns are visible */
+.dropdown-menu {
+    z-index: 9999 !important;
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: block !important;
+}
+
+/* Fix any potential navbar dropdown issues */
+.navbar-dropdown {
+    z-index: 9999 !important;
+}
+
+/* Clean dropdown styling */
+.dropdown-menu {
+    background-color: white !important;
+    border: 1px solid rgba(0,0,0,0.15) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+.dropdown-menu.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Optional: Style the entire length container */
+.dataTables_length {
+    margin-bottom: 15px;
+}
+
+.dataTables_length label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+/* Remove horizontal scroll */
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
+.table-responsive {
+    overflow-x: visible !important;
+}
+
+#questionsTable {
+    width: 100% !important;
+    table-layout: auto;
+}
+
+/* Make table columns more responsive */
+#questionsTable th,
+#questionsTable td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+/* Specific column width adjustments */
+#questionsTable th:nth-child(1), /* ID */
+#questionsTable td:nth-child(1) {
+    width: 60px;
+    max-width: 60px;
+}
+
+#questionsTable th:nth-child(2), /* Section */
+#questionsTable td:nth-child(2) {
+    width: 120px;
+    max-width: 120px;
+}
+
+#questionsTable th:nth-child(3), /* Question */
+#questionsTable td:nth-child(3) {
+    width: 250px;
+    max-width: 250px;
+}
+
+#questionsTable th:nth-child(4), /* Options */
+#questionsTable td:nth-child(4) {
+    width: 80px;
+    max-width: 80px;
+}
+
+#questionsTable th:nth-child(5), /* Order */
+#questionsTable td:nth-child(5) {
+    width: 60px;
+    max-width: 60px;
+}
+
+#questionsTable th:nth-child(6), /* Status */
+#questionsTable td:nth-child(6) {
+    width: 80px;
+    max-width: 80px;
+}
+
+#questionsTable th:nth-child(7), /* Actions */
+#questionsTable td:nth-child(7) {
+    width: 180px;
+    max-width: 180px;
+}
